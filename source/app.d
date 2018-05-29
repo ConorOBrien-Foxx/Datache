@@ -1,6 +1,11 @@
 import std.stdio;
+import dunit;
 
-void main()
-{
-	writeln("Edit source/app.d to start your project.");
+void main(string[] args) {
+    version(unittest) {
+        dunit_main(args);
+    }
+    else {
+        writeln("todo: application");
+    }
 }
