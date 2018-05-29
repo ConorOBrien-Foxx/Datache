@@ -1,0 +1,9 @@
+{
+	"name": "datache",
+	"authors": [
+		"conorob"
+	],
+	"description": "Attache implemented in D.",
+	"copyright": "Copyright © 2018, conorob",
+	"license": "proprietary"
+}
