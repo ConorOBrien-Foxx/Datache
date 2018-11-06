@@ -3,9 +3,6 @@
     "authors": [
         "conorob"
     ],
-    "dependencies": {
-        "d-unit": "~>0.9.0"
-    },
     "description": "Attache implemented in D.",
     "copyright": "Copyright © 2018, conorob",
     "license": "proprietary"
