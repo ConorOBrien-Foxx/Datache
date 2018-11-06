@@ -8,14 +8,15 @@ class TypeMismatchException : Exception {
     }
 }
 
-bool isDatacheValue(Object other) {
-    return typeid(other) == typeid(DatacheValue);
-}
-
+/// base class for all values in Datache
 abstract class DatacheValue {
+    /// the string constant representing the name of the class
+    /// prefer more conventional names, like "number" or "character"
     public static const string TAG = "DatacheValue";
+    /// the instance's type (assigned by `new DatacheValue(string)`)
     public string type;
 
+    /// default constructor to be called by every implementing class
     this(string tag) {
         type = tag;
     }
